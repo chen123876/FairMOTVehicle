@@ -6,11 +6,10 @@
 
 Accepted by **IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)**.
 
-[Repository](https://github.com/chen123876/FairMOTVehicle) · [Method](#method) · [Results](#results) · [Installation](#installation) · [Data preparation](#data-preparation) · [Training](#training) · [Evaluation](#evaluation) · [Citation](#citation)
+[Repository](https://github.com/chen123876/FairMOTVehicle) 
 
 DDTrack (**Decoupled Dense-scene Tracking**) is a task-aware multi-object tracking framework for crowded monitoring scenarios. Built upon FairMOT, it strengthens contextual feature extraction and introduces a dedicated identity feature learning pathway to address severe occlusion, similar object appearances, and frequent identity switches. The paper evaluates DDTrack on MOT17, MOT20, and the proposed Tunnel-Vehicle MOT (TV-MOT) dataset.
 
-> **Code status:** This checkout contains FairMOT-derived research code. The results below are reported in the accepted manuscript; this checkout has not been verified to reproduce them. See [Implementation status](#implementation-status) for differences and prerequisites identified in the current source.
 
 ## Method
 
@@ -131,7 +130,14 @@ List filenames are resolved from the working directory; image paths in each list
 
 ### TV-MOT
 
-TV-MOT contains **eight manually annotated vehicle video sequences**, with four training sequences and four test sequences from tunnel-interior and tunnel-exterior environments. Challenges include headlight reflections, illumination changes, perspective compression, small vehicles, and occlusion.
+**TV-MOT (Tunnel-Vehicle Multi-Object Tracking)** is a self-constructed vehicle tracking dataset developed for tunnel traffic monitoring. The source videos were collected from a tunnel in **Shanghai, China**, and converted into image sequences to form the dataset. Frame order is preserved so that vehicles can be tracked across consecutive images. The dataset covers both tunnel-interior and tunnel-exterior scenes.
+
+TV-MOT complements public pedestrian tracking benchmarks by providing tunnel-specific vehicle imagery. Its main challenges include:
+
+- **Reflections and illumination changes:** vehicle headlights and reflections on tunnel walls can resemble objects and cause false detections, while changing lighting conditions affect vehicle appearance.
+- **Dense traffic and occlusion:** closely spaced vehicles frequently overlap, making it difficult to maintain consistent identities across frames.
+- **Small targets and perspective compression:** distant vehicles occupy only a small image region, and perspective reduces the apparent spacing between them.
+- **Background interference:** roadside structures and other background content complicate vehicle detection and association, particularly outside the tunnel.
 
 The paper lists the following training sequences:
 
