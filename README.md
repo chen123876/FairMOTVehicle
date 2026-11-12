@@ -30,7 +30,7 @@ All values in this section are **reported in the paper**, rather than measured f
 ### MOT20
 
 | Method | MOTA ↑ | IDF1 ↑ | HOTA ↑ | IDSW ↓ |
-| :--- | ---: | ---: | ---: | ---: |
+| :---: | :---: | :---: | :---: | :---: |
 | FairMOT | 61.8 | 67.3 | 54.6 | 5,243 |
 | DDTrack | **63.2** | 64.4 | 51.9 | **2,634** |
 
@@ -39,7 +39,7 @@ DDTrack improves MOTA by **1.4 percentage points** and reduces identity switches
 ### TV-MOT
 
 | Method | MOTA ↑ | IDF1 ↑ | HOTA ↑ | IDSW ↓ |
-| :--- | ---: | ---: | ---: | ---: |
+| :---: | :---: | :---: | :---: | :---: |
 | FairMOT | 74.8 | 83.2 | 83.1 | **3** |
 | DDTrack | **79.3** | **87.8** | **89.3** | 4 |
 
@@ -136,7 +136,7 @@ TV-MOT complements public pedestrian tracking benchmarks by providing tunnel-spe
 The paper lists the following training sequences:
 
 | Sequence | FPS | Resolution | Frames | Vehicles | Scene |
-| :--- | ---: | :--- | ---: | ---: | :--- |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | 0 | 30 | 1280 × 720 | 612 | 15 | Inside tunnel |
 | 1 | 30 | 1280 × 720 | 646 | 18 | Inside tunnel |
 | 2 | 30 | 1280 × 720 | 536 | 16 | Inside tunnel |
@@ -238,10 +238,6 @@ If this work is useful in your research, please cite the paper. The entry below 
   note    = {Accepted for publication}
 }
 ```
-
-## Acknowledgements
-
-This project builds upon [FairMOT](https://github.com/ifzhang/FairMOT). We also acknowledge [JDE](https://github.com/Zhongdao/Towards-Realtime-MOT), [CenterNet](https://github.com/xingyizhou/CenterNet), [DLA](https://github.com/ucbdrive/dla), and [DCNv2](https://github.com/CharlesShang/DCNv2) for their open-source contributions. The original FairMOT README is preserved in [docs/README_FairMOT.md](docs/README_FairMOT.md).
 
 ## License
 
