@@ -1,0 +1,33 @@
+# Reference environment: Python 3.6.9, PyTorch CUDA build 10.0.130.
+# Install the matching CUDA-enabled PyTorch build separately if needed;
+# these version pins do not select a CUDA build.
+torch==1.2.0
+torchvision==0.4.0
+
+# Core image processing and numerical dependencies.
+numpy==1.19.5
+scipy==1.5.4
+opencv-python==3.4.2.17
+Pillow==8.4.0
+matplotlib==3.3.4
+
+# Bounding-box operations and tracking evaluation.
+Cython==3.0.12
+cython-bbox==0.1.5
+lap==0.4.0
+motmetrics==1.4.0
+pandas==1.1.5
+
+# Configuration and training progress.
+PyYAML==5.4.1
+# Versions were not recorded in the supplied environment export.
+progress
+yacs
+
+# Excel summary export; Python 3.6-compatible range, not an observed version.
+openpyxl>=3.0,<3.1
+
+# Optional: tensorboardX for TensorBoard logging.
+# DCNv2 must be compiled separately against the selected PyTorch/CUDA stack.
+# Observed source: https://github.com/ifzhang/DCNv2.git
+# Commit: 41c9ebb3f7e9e563529bb5efc831c3922de72b08

@@ -1,0 +1,8 @@
+{
+  "root": "./dataset/SubwayCar.v1",
+  "train": { "SubwayCar": "./dataset/SubwayCar.v1/subway_car1.train" },
+  "val":   { "SubwayCar": "./dataset/SubwayCar.v1/subway_car1.train" },
+  "num_classes": 1,
+  "class_name": ["car"]
+}
+

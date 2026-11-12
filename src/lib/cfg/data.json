@@ -1,0 +1,10 @@
+{
+  "root": "",
+  "train": {
+    "mot20": "./src/data/mot20.train"
+  },
+  "test": {
+    "mot20": "./src/data/mot20.val"
+  }
+}
+

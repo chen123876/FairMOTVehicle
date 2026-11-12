@@ -156,13 +156,6 @@ test/
 
 ## Training
 
-### Paper protocol
-
-The paper uses Adam without explicit weight decay, HSV and random affine augmentation, input size **1088 × 608**, and total batch size **12** on two Tesla V100 GPUs:
-
-1. Train on MOT17 and CrowdHuman for **60 epochs**, starting at learning rate `1e-4` and reducing it by 10 at epoch 50.
-2. Further train on MIX, starting at `1e-4` and reducing it to `1e-5` after 20 epochs.
-3. Fine-tune on MOT20 for **30 epochs**.
 
 ### Current training interface
 
@@ -238,6 +231,7 @@ If this work is useful in your research, please cite the paper. The entry below 
   note    = {Accepted for publication}
 }
 ```
+
 
 ## License
 
