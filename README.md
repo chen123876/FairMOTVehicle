@@ -43,12 +43,6 @@ DDTrack improves MOTA by **1.4 percentage points** and reduces identity switches
 | FairMOT | 74.8 | 83.2 | 83.1 | **3** |
 | DDTrack | **79.3** | **87.8** | **89.3** | 4 |
 
-### Runtime on MOT20
-
-| Method | Average latency (ms/frame) ↓ | FPS ↑ |
-| :--- | ---: | ---: |
-| FairMOT | 62.14 | 16.09 |
-| DDTrack | **36.51** | **27.39** |
 
 Timing uses one **Tesla V100**, FP32, batch size **1**, and input resolution **1088 × 608**. The first 20 frames of each of the four MOT20 test sequences are excluded as warm-up. The timed region includes host-to-device transfer, inference, detection decoding, Re-ID feature extraction, association, and track updating. Image loading, result writing, and visualization are excluded.
 
